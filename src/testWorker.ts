@@ -8,7 +8,7 @@ export const testWorker = {
     });
     return {
       send() {
-        console.log("send is called once");
+        console.log("send");
         worker.postMessage("ping" + Math.random());
       },
     };
